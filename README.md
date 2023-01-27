@@ -2,13 +2,15 @@
 
 The objective of this homework is to practice what we have learned so far with Git, 
 GitHub and Python, and apply it to analyze 2-lead electrocardiogram data. 
-For the first two questions, please write your answers in the file called `Answers.py`. 
+For the first two questions, please write your answers in a file called `Answers.py`. 
 
 
 # File exploration (5 pts)
 1. Make a function called `record_reader` that receives a **path to a folder** that contains a list of 
 ECG records (hea), and returns a list of sorted record files and a list with the corresponding
-ECGRecord object. Example dictionary: (please use the same keys)
+ECGRecord object. 
+
+Example dictionary: (please use the same keys)
 
 ```python
 output = {'record_files': ['file1.hea', 'file2.hea'],
