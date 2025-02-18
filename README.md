@@ -8,12 +8,12 @@ For this assignment you need to make a markdown report file called `report.md` w
  auto-grading to work properly, all of your answers must be written in a file called 
  `answers_module.py` in the 'root' folder of this repo (except the last question).
 
-# Database description (10 pts)
+# 1 Database description (10 pts)
 Please provide a description and summary of the database used in this homework.
 How many records are there? How many measurements per record? What is the sampling frequency? What are the symbols used in the annotations and what do they mean? 
 
 
-# File exploration (10 pts)
+# 2 File exploration (10 pts)
 1. Make a function called `record_reader` that receives a **path to a folder** that contains a list of 
 ECG records (hea files), and returns a list of dictionaries containing the record files and the corresponding `WFDB Record` and `WFDB Annotation` objects. 
 
@@ -31,7 +31,7 @@ output = [{'file_name':'file1',
             'annot_obj':Annotation_obj_2}]
 ```
 
-# ECG analysis basics (10 pts)
+# 3 ECG analysis basics (10 pts)
 2. Make a function called `heart_beats_summary` that receives one **WFDB Record**  
 and returns in a dictionary:
 
@@ -48,7 +48,7 @@ output = {'heart_beats': 303,
           }
 ```
 
-# ECG visualization (10 pts)
+# 4 ECG visualization (10 pts)
    Inside a **JupyterNotebook** file (not the same `answers_module.py`) create an Ipwidget that uses a list of hea files (previously loaded from a path pointing to a list of ECG files, like `test_folder/Data`)
    and allows the user to:
 
@@ -63,7 +63,7 @@ Examples of the widget (this widget doesn't have the proper conversion to minute
 ![Ex3](imgs/3.png)
 ![Ex4](imgs/4.png)
 
-# Extra ECG analysis (Extra 10 pts)
+# 5 Extra ECG analysis (Extra 10 pts)
 Include in your widget the corresponding label
 assigned to each beat in the selected time interval.
 
